@@ -123,6 +123,27 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+
+    <!-- Event snippet for Chamou no WhatsApp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17674336655/iNeQCPjJyfEcEI_z4-tB',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   </head>
   <body>
     <header>
