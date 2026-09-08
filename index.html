@@ -126,7 +126,8 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
   </head>
   <body>
     <header>
-      <a class="logo" href="#">
+     <div class="container">
+       <a class="logo" href="#">
         <img src="./assets/icons/logo.png" alt="Logomarca de JC Esquadrias" />
       </a>
 
@@ -137,13 +138,14 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
       </div>
 
       <nav id="navMenu">
-        <a href="#sobre-nos" class="logo-metalico-2">Sobre</a>
-        <a href="#nossos-servicos" class="logo-metalico-2">Serviços</a>
-        <a href="#fotos" class="logo-metalico-2">Fotos</a>
-        <a href="#comentarios-de-clientes" class="logo-metalico-2">Avaliações</a>
-        <a href="#faq" class="logo-metalico-2">Perguntas Frequentes</a>
-        <a href="#contato" class="logo-metalico-2">Fale conosco</a>
+        <a href="#sobre-nos">Sobre</a>
+        <a href="#nossos-servicos">Serviços</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#comentarios-de-clientes">Avaliações</a>
+    
+        <a href="#contato">Fale conosco</a>
       </nav>
+     </div>
     </header>
     <!-- Overlay -->
     <div id="menuOverlay"></div>
@@ -152,8 +154,8 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
       <section class="hero" id="hero">
         <div class="hero-container">
           <div class="hero-text">
-          <h1 class="logo-metalico">
-            Esquadrias de Alumínio Sob Medida em Pará de Minas
+          <h1 >
+            Vidros e Esquadrias de Alumínio Sob Medida para sua obra
           </h1>
           <p id="cidade-atendimento" >
             Vidraçaria e Serralheria de Alumínio em Pará de Minas atendendo em sua região
@@ -163,9 +165,13 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
            target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+             href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
-            <svg
+          
+            Orçamento no WhatsApp
+              <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -177,39 +183,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
               />
             </svg>
-            Orçamento no WhatsApp
           </a>
         </div>
-        <form id="whatsappForm">
-              <h3 class="">Solicite um orçamento</h3>
-              <label>Nome:</label>
-              <input
-                type="text"
-                id="nome"
-                placeholder="Digite seu nome..."
-                required
-              />
-            
-
-              <label>Endereço:</label>
-              <input
-                type="text"
-                id="endereco"
-                placeholder="Digite seu endereço..."
-                required
-              />
-
-              <label>Mensagem:</label>
-              <textarea
-                id="mensagem"
-                placeholder="Escreva uma mensagem sobre o serviço necessitado"
-                required
-              ></textarea>
-
-              <button type="submit" 
-           
-   >Enviar para o WhatsApp</button>
-        </form>
+     
         </div>
       </section>
       <!--Fim da sessão "hero" -->
@@ -217,12 +193,11 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
       <section class="services" id="nossos-servicos">
         <div class="services-container">
           <!-- Título e Subtítulo -->
-          <h2  class="logo-metalico-2">
-            Soluções em Esquadrias de Alumínio
+          <h2  >
+            Soluções em Vidros e Esquadrias de Alumínio
           </h2>
           <p  >
-            Com mais de 34 anos de experiência, oferecemos serviços completos de
-            esquadrias de alumínio em Pará de Minas e em até 150 km de
+            Com mais de 34 anos de experiência, oferecemos serviços completos de vidraçaria e serralheria de alumínio em Pará de Minas e em até 150 km de
             distância. Atendemos residências, comércios e indústrias, sempre com
             foco em qualidade, durabilidade e acabamento impecável.
           </p>
@@ -238,7 +213,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 alt="Esquadrias de alumínio linha suprema"
               />
            <div class="card-text">
-               <h3 class="logo-metalico-2">Esquadrias de Alumínio</h3>
+               <h3 >Esquadrias de Alumínio</h3>
               <p>
   Fabricação e instalação de esquadrias de alumínio sob medida, com alta durabilidade,
   acabamento moderno e excelente vedação para projetos residenciais e comerciais.
@@ -247,7 +222,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -277,7 +254,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
               />
               
              <div class="card-text">
-               <h3 class="logo-metalico-2">Blindex</h3>
+               <h3 >Blindex</h3>
               <p>
   Trabalhamos com vidros temperados para portas, janelas, box de banheiro,
   basculantes, espelhos e soluções em vidro com segurança e acabamento profissional.
@@ -286,7 +263,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -314,7 +293,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 alt="PELE DE VIDRO"
               />
 <div class="card-text">
-                <h3 class="logo-metalico-2">Pele de Vidro</h3>
+                <h3 >Pele de Vidro</h3>
               <p>
   Execução de projetos em pele de vidro que valorizam fachadas comerciais e residenciais,
   garantindo sofisticação, iluminação natural e visual moderno.
@@ -323,7 +302,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -351,7 +332,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 alt="Portas ACM"
               />
              <div class="card-text">
-               <h3 class="logo-metalico-2">Portas ACM</h3>
+               <h3 >Portas ACM</h3>
               <p>
   Portas em ACM sob medida, ideais para fachadas comerciais e residenciais,
   oferecendo resistência, design moderno e excelente custo-benefício.
@@ -360,7 +341,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -389,7 +372,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 alt="Portas de Alumínio"
               />
             <div class="card-text">
-                <h3 class="logo-metalico-2">Portas de Alumínio</h3>
+                <h3 >Portas de Alumínio</h3>
               <p>
                 Sob medida, seguras e elegantes, perfeitas para qualquer projeto
                 residencial ou comercial.
@@ -398,7 +381,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -428,7 +413,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 alt="Janelas de Alumínio"
               />
            <div class="card-text">
-               <h3 class="logo-metalico-2">Janelas de Alumínio</h3>
+               <h3 >Janelas de Alumínio</h3>
               <p>
                 Design personalizado, resistência e conforto térmico para todos
                 os ambientes.
@@ -437,7 +422,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -467,7 +454,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                 alt="Fachadas e Estruturas"
               />
          <div class="card-text">
-               <h3 class="logo-metalico-2">Fachadas e Estruturas</h3>
+               <h3 >Fachadas e Estruturas</h3>
               <p>
                 Projetos modernos que valorizam seu imóvel, com alta
                 durabilidade e acabamento impecável.
@@ -476,7 +463,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
            
             Solicitar Orçamento
@@ -502,7 +491,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
               
              
             >
-              <h3 class="logo-metalico-2">Manutenção e Instalação</h3>
+              <h3 >Manutenção e Instalação</h3>
               <p>
                 Serviço completo e confiável, mantendo suas esquadrias sempre
                 perfeitas e funcionando corretamente.
@@ -519,7 +508,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
       <!--Fim da sessão "services"-->
       <section class="fotos" id="fotos">
         <div class="fotos-container">
-          <h2 class="logo-metalico"  >
+          <h2   >
             Nossos Projetos em Alumínio
           </h2>
           <p class="subtitulo"  >
@@ -540,7 +529,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Pele de Vidro</h3>
+                    <h3 >Pele de Vidro</h3>
                     <p>
                       Fachada elegante com vidro temperado e alumínio de alta
                       resistência.
@@ -555,7 +544,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Pele de Vidro Moderna</h3>
+                    <h3 >Pele de Vidro Moderna</h3>
                     <p>
                       Design sofisticado para projetos comerciais e
                       residenciais.
@@ -570,7 +559,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Pele de Vidro Azul</h3>
+                    <h3 >Pele de Vidro Azul</h3>
                     <p>
                       Conforto térmico e estética diferenciada em grandes
                       fachadas.
@@ -585,7 +574,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Fachada com Alumínio</h3>
+                    <h3 >Fachada com Alumínio</h3>
                     <p>Beleza e durabilidade em projetos de alto padrão.</p>
                   </div>
                 </li>
@@ -597,7 +586,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Fachada com Esquadrias</h3>
+                    <h3 >Fachada com Esquadrias</h3>
                     <p>Acabamento impecável para empreendimentos comerciais.</p>
                   </div>
                 </li>
@@ -609,7 +598,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Fachada Alumínio e Vidro</h3>
+                    <h3 >Fachada Alumínio e Vidro</h3>
                     <p>
                       Integração de modernidade e praticidade em um só projeto.
                     </p>
@@ -623,7 +612,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Parede de Vidro</h3>
+                    <h3 >Parede de Vidro</h3>
                     <p>Iluminação natural com resistência e sofisticação.</p>
                   </div>
                 </li>
@@ -635,7 +624,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Porta Slide Door</h3>
+                    <h3 >Porta Slide Door</h3>
                     <p>Deslizante e prática para ambientes modernos.</p>
                   </div>
                 </li>
@@ -647,7 +636,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Porta Slide de Alumínio</h3>
+                    <h3 >Porta Slide de Alumínio</h3>
                     <p>Funcionalidade com acabamento de alto padrão.</p>
                   </div>
                 </li>
@@ -659,7 +648,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Porta de Vidro com Alumínio</h3>
+                    <h3 >Porta de Vidro com Alumínio</h3>
                     <p>Transparência e robustez em projetos residenciais.</p>
                   </div>
                 </li>
@@ -671,7 +660,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Porta Vidro Temperado</h3>
+                    <h3 >Porta Vidro Temperado</h3>
                     <p>Mais segurança e sofisticação para entrada principal.</p>
                   </div>
                 </li>
@@ -683,7 +672,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Portão de Alumínio Branco</h3>
+                    <h3 >Portão de Alumínio Branco</h3>
                     <p>Resistência contra corrosão e estética clean.</p>
                   </div>
                 </li>
@@ -695,7 +684,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Portão Moderno</h3>
+                    <h3 >Portão Moderno</h3>
                     <p>Elegância e segurança em um só produto.</p>
                   </div>
                 </li>
@@ -707,7 +696,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Porta AMC Alumínio</h3>
+                    <h3 >Porta AMC Alumínio</h3>
                     <p>Acabamento refinado para projetos residenciais.</p>
                   </div>
                 </li>
@@ -719,7 +708,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
                     loading="lazy"
                   />
                   <div class="overlay">
-                    <h3 class="logo-metalico-2">Porta AMC Sob Medida</h3>
+                    <h3 >Porta AMC Sob Medida</h3>
                     <p>Personalização completa para atender cada projeto.</p>
                   </div>
                 </li>
@@ -734,9 +723,12 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
-            <svg
+         
+            Orçamento pelo WhatsApp    <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -745,15 +737,14 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
               viewBox="0 0 16 16"
             >
               <path
-                d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
               />
             </svg>
-            Orçamento pelo WhatsApp
           </a>
         </div>
       </section>
       <section class="sobre" id="sobre-nos">
-        <h2  class="logo-metalico">
+        <h2  >
           Experiência e confiança em esquadrias de alumínio
         </h2>
         <div class="sobre-container">
@@ -794,7 +785,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
           target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -814,7 +807,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
       <!--Fim da sessão "sobre" -->
       <!--Fim da sessão "fotos"-->
       <section class="reviews" id="comentarios-de-clientes">
-        <h2 class="logo-metalico">O que nossos clientes dizem</h2>
+        <h2 >O que nossos clientes dizem</h2>
         <p class="reviews-subtitle">
           Mais de 34 anos de confiança em esquadrias de alumínio
         </p>
@@ -876,7 +869,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
         
         
       >
-        <h2 class="logo-metalico">Perguntas Frequentes</h2>
+        <h2 >Perguntas Frequentes</h2>
         <div class="faq-item">
           <button class="faq-question">
             Quanto tempo leva para fabricar e instalar as esquadrias?
@@ -921,7 +914,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
           target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -941,7 +936,7 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
 
       <section class="cta-final">
         <div class="cta-container">
-          <h2  class="logo-metalico-2">
+          <h2  >
             Transforme Seu Projeto em Realidade
           </h2>
           <p  >
@@ -954,7 +949,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
             target="_blank"
             class="cta-button"
             rel="noopener noreferrer"
-            onclick="dispararCTA()"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1034,7 +1031,9 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
               
               target="_blank"
               class="btn-contato whatsapp"
-              onclick="wppOpen(); return gtag_report_conversion( )"
+              href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1098,23 +1097,25 @@ src="https://www.facebook.com/tr?id=2057299911753774&ev=PageView&noscript=1"
     </main>
 
     <footer>
-      <h3 class="logo-metalico-2">JC Esquadrias</h3>
+      <h3 >JC Esquadrias</h3>
       <em>2025 - Todos os direitos reservados</em>
       <p>CNPJ: 60.279.653/0001-83</p>
       <p>Cel: (37) 99818-7529</p>
       <p>Pará de Minas</p>
-      <a href="https://clintindossites.com.br" target="_blank" style="text-align: center; text-decoration: none; color: white; font-size: 1rem;">Desenvolvido por: <br><span class="logo-metalico-2" style="font-size: 1rem;">Clintin dos Sites</span></a>
+      <a href="https://clintindossites.com.br" target="_blank" style="text-align: center; text-decoration: none; color: white; font-size: 1rem;">Desenvolvido por: <br><span  style="font-size: 1rem;">Clintin dos Sites</span></a>
     </footer>
     <a
        
         class="btn-whatsapp"
         target="_blank"
-       
+         href="https://wa.me/5537999095351?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento..."
+              target="_blank"
+              onclick="gtag_report_conversion( )"
         
         
       >
         <img
-          onclick="wppOpen(); return gtag_report_conversion()"
+    
           src="./assets/icons/whatssapp.svg"
           alt="Botão whatsapp"
         />
